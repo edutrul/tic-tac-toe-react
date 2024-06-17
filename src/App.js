@@ -7,6 +7,10 @@ export default function Board() {
 
   function handleClick(i) {
     const nextSquares = squares.slice();
+    // If Empty
+    if (squares[i]) {
+      return;
+    }
     if (isXNext) {
       squares[i] = "X";
     }
